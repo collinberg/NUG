@@ -1,0 +1,14 @@
+{
+  "name": "netflix-update-guide",
+  "version": "1.0.0",
+  "description": "Node.js app that pulls in data from OmDB to give relevant information on what movies Netflix is adding for a month.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Collin Berg",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
