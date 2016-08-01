@@ -1,0 +1,10 @@
+extends ./layout.jade
+
+block content
+	ul.nav
+		each movie in posts
+			li.movie
+				img(src="#{movie.Poster}")
+				hr.light
+				h3.title
+					a(href= "/blog/" + movie.title) #{movie.title}
