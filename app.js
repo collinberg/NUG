@@ -1,6 +1,7 @@
 'use strick';
 
 const express = require('express');
+const movies = require('./movies.js');
 posts = require('./mock/posts.json'); 
 	  //Turn Object into array
 
@@ -19,9 +20,14 @@ app.set('views', './templates');
 
 app.get('/', function(req,res){
 
-			
-	res.render('index');
+	var list = new movies();
+	res.render('index',{ post: list });
+	
+	
+	
 });
+
+
 app.get('/blog/:title?', function(req,res){
 
 	var title = req.params.title

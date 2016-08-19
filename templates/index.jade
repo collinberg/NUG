@@ -7,6 +7,8 @@ block content
 	section.movies
 		ul.nav
 			li.movie
+				img(src="#{post.poster}",alt="#{post.title}")
 				h3.title
-					span Title
+					span #{post.title} (#{post.year})
+				span.rating IMDB: #{post.rating}
 	footer.mainfooter
